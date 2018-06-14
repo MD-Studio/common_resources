@@ -1,0 +1,15 @@
+{
+    "$schema": "http://json-schema.org/draft-04/schema#",
+    "title": "path_file_output",
+    "description": "print a file_path description",
+    "type": "object",
+    "properties": {	
+	"status": {
+	    "type": "string",
+	    "description": "Job final status",
+	    "enum": ["failed", "completed"]
+	},
+	"file": {
+	    "$ref": "resource://mdgroup/common_resources/file_path/v1"}
+    }
+}
