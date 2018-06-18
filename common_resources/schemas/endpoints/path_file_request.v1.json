@@ -2,9 +2,9 @@
     "$schema": "http://json-schema.org/draft-04/schema#",
     "title": "path_file_input",
     "description": "print a file_path description",
+    "type": "object",
     "properties": {
-	"file": {
-	    "$ref": "resource://mdgroup/common_resources/path_file/v1"
-	}
+	"path_file": {
+	    "$ref": "resource://mdgroup/common_resources/path_file/v1"}
     }
 }

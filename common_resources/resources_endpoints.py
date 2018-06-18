@@ -8,14 +8,14 @@ class Common_resources(ComponentSession):
     def authorize_request(self, uri, claims):
         return True
 
-    @endpoint('path_file', 'path_file_request', 'path_file_response')
+    @endpoint('call_path_file', 'path_file_request', 'path_file_response')
     def call_path_file(self, request, claims):
         """
         echo a `file_path` object.
         """
-        path = request("path_file")
-        print("object name: ", path['name'])
-        print("object encoding: ", path['encoding'])
-        print("object extension: ", path['extension'])
+        path_file = request["path_file"]
+        print("object original path: ", path_file['path'])
+        print("object encoding: ", path_file['encoding'])
+        print("object extension: ", path_file['extension'])
 
-        return {'status': 'completed', 'file': path}
+        return {'status': 'completed', 'path_file': path_file}

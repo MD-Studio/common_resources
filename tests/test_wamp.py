@@ -10,7 +10,9 @@ with open(path_test_file, 'r') as f:
     content = f.read()
 
 dict_path_file = {
-    'content': content, 'path': path_test_file, 'extension': '.mol2'}
+    "content": content,
+    "path": path_test_file,
+    "extension": ".mol2"}
 
 
 class Run_test_resources(ComponentSession):
@@ -22,8 +24,8 @@ class Run_test_resources(ComponentSession):
     def on_run(self):
         with self.group_context('mdgroup'):
             yield self.call(
-                "mdgroup.common_resources.endpoint.file_path",
-                {'file': dict_path_file})
+                "mdgroup.common_resources.endpoint.call_path_file",
+                {"path_file": dict_path_file})
 
 
 if __name__ == "__main__":

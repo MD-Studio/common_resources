@@ -9,7 +9,7 @@
 	    "description": "Job final status",
 	    "enum": ["failed", "completed"]
 	},
-	"file": {
+	"path_file": {
 	    "$ref": "resource://mdgroup/common_resources/path_file/v1"}
     }
 }
