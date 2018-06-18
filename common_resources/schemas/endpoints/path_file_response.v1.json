@@ -10,6 +10,6 @@
 	    "enum": ["failed", "completed"]
 	},
 	"file": {
-	    "$ref": "resource://mdgroup/common_resources/file_path/v1"}
+	    "$ref": "resource://mdgroup/common_resources/path_file/v1"}
     }
 }

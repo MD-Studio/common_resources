@@ -17,4 +17,5 @@ class Common_resources(ComponentSession):
         print("object name: ", path['name'])
         print("object encoding: ", path['encoding'])
         print("object extension: ", path['extension'])
-        
+
+        return {'status': 'completed', 'file': path}
