@@ -22,10 +22,9 @@ class Run_test_resources(ComponentSession):
 
     @chainable
     def on_run(self):
-        with self.group_context('mdgroup'):
-            yield self.call(
-                "mdgroup.common_resources.endpoint.call_path_file",
-                {"path_file": dict_path_file})
+        yield self.call(
+            "mdgroup.common_resources.endpoint.call_path_file",
+            {"path_file": dict_path_file})
 
 
 if __name__ == "__main__":
