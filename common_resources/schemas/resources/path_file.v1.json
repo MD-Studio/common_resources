@@ -5,7 +5,7 @@
     "type": "object",
     "properties": {
 	"content": {
-	    "type": "string",
+	    "type": ["string", "null"],
 	    "description": "actual content of the file"
 	},
 	"path": {
