@@ -9,7 +9,7 @@
 	    "description": "actual content of the file"
 	},
 	"path": {
-	    "type": "string",
+	    "type": ["string", "null"],
 	    "description": "file path"
 	},
 	"extension": {
