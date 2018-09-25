@@ -14,7 +14,7 @@
 	},
 	"extension": {
 	    "type": "string",
-	    "description": "extension of the file"
+	    "description": "extension of the file without the leading dot"
 	},
 	"encoding": {
 	    "type": "string",
