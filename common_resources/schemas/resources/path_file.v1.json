@@ -3,6 +3,7 @@
     "title": "path_file",
     "description": "Object describing a file",
     "type": "object",
+	"format": "file",
     "properties": {
 	"content": {
 	    "type": ["string", "null"],
