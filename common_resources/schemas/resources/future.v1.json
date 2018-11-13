@@ -1,0 +1,21 @@
+{
+  "$schema": "http://json-schema.org/draft-04/schema#",
+  "title": "future",
+  "description": "Object describing a promised result",
+  "type": "object",
+  "format": "file",
+  "properties": {
+    "status": {
+      "type": "string",
+	"description": "Current status of the future/promise",
+	"enum": [
+	    "completed",
+	    "failed",
+	    "running"
+	]
+    }
+  },
+  "required": [
+      "status"
+  ]
+}
