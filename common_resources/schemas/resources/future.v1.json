@@ -21,10 +21,15 @@
 	"results": {
 	    "type": "object",
 	    "description": "Dictionary-like object containing the results if available"
+	},
+	"query_url": {
+	    "type": "string",
+	    "description": "Url to query for the results of a async/future call"
 	}
     },
     "required": [
 	"status",
-	"task_id"
+	"task_id",
+	"query_url"
     ]
 }
