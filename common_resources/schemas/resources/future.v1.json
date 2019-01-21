@@ -1,35 +1,42 @@
 {
-    "$schema": "http://json-schema.org/draft-04/schema#",
-    "title": "future",
-    "description": "Object describing a promised result",
-    "type": "object",
-    "format": "file",
-    "properties": {
-	"status": {
-	    "type": "string",
-	    "description": "Current status of the future/promise",
-	    "enum": [
-		"completed",
-		"failed",
-		"running"
-	    ]
-	},
-	"task_id": {
-	    "type": "string",
-	    "description": "Identifier of the task"
-	},
-	"results": {
-	    "type": "object",
-	    "description": "Dictionary-like object containing the results if available"
-	},
-	"query_url": {
-	    "type": "string",
-	    "description": "Url to query for the results of a async/future call"
-	}
+  "$schema": "http://json-schema.org/draft-04/schema#",
+  "title": "future",
+  "description": "Object describing a promised result",
+  "type": "object",
+  "format": "file",
+  "properties": {
+    "object_type": {
+      "type": "string",
+      "description": "Object type name",
+      "default": "FutureObject",
+      "readOnly": true
     },
-    "required": [
-	"status",
-	"task_id",
-	"query_url"
-    ]
+    "status": {
+      "type": "string",
+      "description": "Current status of the future/promise",
+      "enum": [
+        "completed",
+        "failed",
+        "running"
+      ]
+    },
+    "task_id": {
+      "type": "string",
+      "description": "Identifier of the task"
+    },
+    "results": {
+      "type": "object",
+      "description": "Dictionary-like object containing the results if available"
+    },
+    "query_url": {
+      "type": "string",
+      "description": "Url to query for the results of a async/future call"
+    }
+  },
+  "required": [
+    "status",
+    "task_id",
+    "query_url",
+    "object_type"
+  ]
 }
