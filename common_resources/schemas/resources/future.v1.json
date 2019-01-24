@@ -28,6 +28,11 @@
       "type": "object",
       "description": "Dictionary-like object containing the results if available"
     },
+    "delta_t": {
+      "type": "integer",
+      "description": "Recommended time in seconds to check query_url for task status",
+      "minimum": 60
+    },
     "query_url": {
       "type": "string",
       "description": "Url to query for the results of a async/future call"
