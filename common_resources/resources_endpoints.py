@@ -1,3 +1,5 @@
+# -*- coding: utf-8 -*-
+
 from mdstudio.api.endpoint import endpoint
 from mdstudio.component.session import ComponentSession
 
